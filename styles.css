@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Ubuntu";
+  background: #1e3a8a;
+  color: white;
+  max-width: 1400px;
+}
+.mt-2em {
+  margin-top: 2em;
+}
+em {
+  margin-top: 1em;
+}
+/* moon*/
+
+.moon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: 6%;
+  left: 70%;
+  position: fixed;
+  background: #ccc;
+  box-shadow: 0 0 40px 9px white;
+  z-index: -1;
+}
+.c {
+  background-color: #cdcdcd;
+  border-radius: 50%;
+  position: absolute;
+}
+.c1 {
+  width: 45px;
+  height: 45px;
+  top: 30%;
+  left: 20%;
+  box-shadow: inset -1px -1px 3px #585858aa;
+}
+.c2 {
+  width: 15px;
+  height: 15px;
+  top: 10%;
+  left: 50%;
+  box-shadow: inset -1px -1px 1px #585858aa;
+}
+.c3 {
+  width: 17px;
+  height: 17px;
+  top: 30%;
+  left: 60%;
+  box-shadow: inset -1px -1px 3px #585858aa;
+}
+
+/* hbd text  */
+.wish {
+  font-size: 1.5rem;
+}
+
+.dynamic-text {
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+ul {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding-inline-start: 0px;
+}
+li {
+  list-style: none;
+  color: #ffa460;
+  top: 0px;
+  position: relative;
+  animation: slide 16s steps(4) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+span {
+  position: relative;
+  /* margin: 5px 0; */
+  line-height: 90px;
+}
+
+span::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #1e3a8a;
+  border-left: 2px solid #ffa460;
+  animation: typing 3.99s steps(10) infinite;
+}
+
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+/* photos  */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inline-photo {
+  width: 20rem;
+}
+.image {
+  animation: fadeIn 10s;
+}
+
+.photo-paragraph {
+  width: 20rem;
+  font-size: medium;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
